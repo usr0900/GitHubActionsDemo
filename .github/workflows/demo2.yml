@@ -6,6 +6,12 @@ on:
         description: 'Target OU'
         default: 'OU=Test'
         required: true
+      environment:
+        description: 'Operating Environment'
+        type: choice
+        options:
+          - 'Production'
+          - 'Test'
       
 jobs:
   greet:
