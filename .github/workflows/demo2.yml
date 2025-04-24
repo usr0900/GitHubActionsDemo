@@ -1,1 +1,9 @@
 name: 2nd Demo
+on: 
+  workflow_dispatch:
+    inputs:
+      name: 
+      description: 'Target OU'
+      default: 'OU=Test'
+      required: true
+      
